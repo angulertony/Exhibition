@@ -1,0 +1,85 @@
+/** 清除内外边距 **/
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,
+/* structural elements 结构元素 */
+dl,dt,dd,ul,ol,li,
+/* list elements 列表元素 */
+pre,
+/* text formatting elements 文本格式元素 */
+form,fieldset,legend,button,input,textarea,
+/* form elements 表单元素 */
+th,td
+/* table elements 表格元素 */
+{margin: 0;padding: 0;}
+/** 设置默认字体 **/
+button,input,select,textarea{/*font: 14px/1.5 tahoma, \5b8b\4f53, sans-serif;*/}
+img[src=""],img:not([src]) {opacity: 0;}
+h1,h2,h3,h4,h5,h6 {font-size: 100%;font-weight: normal;}
+address,cite,dfn,em,var,i {font-style: normal;}
+/* 将斜体扶正 */
+code,kbd,pre,samp {font-family: courier new, courier, monospace;}
+/* 统一等宽字体 */
+small {font-size: 12px;}
+/* 小于 12px 的中文很难阅读, 让 small 正常化 */
+/** 重置列表元素 **/
+ul,ol {list-style: none;}
+/** 重置文本格式元素 **/
+a,a:hover,a:active {text-decoration: none;-webkit-tap-highlight-color: transparent}
+sup {vertical-align: text-top;}
+/* 重置, 减少对行高的影响 */
+sub {vertical-align: text-bottom;}
+/** 重置表单元素 **/
+legend {color: #000;}
+/* for ie6 */
+fieldset,img {border: 0;}
+/* img 搭车：让链接里的 img 无边框 */
+button,input,select,textarea {font-size: 100%;}
+/* 使得表单元素在 ie 下能继承字体大小 */
+/* 注：optgroup 无法扶正 */
+/** 重置表格元素 **/
+table {border-collapse: collapse;border-spacing: 0;}
+/* 重置 HTML5 元素 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video {display: block;margin: 0;padding: 0;}
+mark {background: #ff0;}
+* {padding: 0;margin: 0;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;-webkit-text-size-adjust:none}
+html {
+	font-size: 20px;
+	font-family: "Microsoft YaHei","微软雅黑","MicrosoftJhengHei","华文细黑","STHeiti","MingLiu";
+}
+/*html,body {width: 100%;height: 100%;overflow-x: hidden;overflow-y: auto;}*/
+body {background-color: #eee;font-size: .85rem;line-height: 1.5;color: #3d4145;}
+input,textarea,select,button {border: none;outline: none;}
+::-moz-placeholder{color:#c2c2c2!important;opacity:.6;font-weight:normal}
+input:-ms-input-placeholder{color:#c2c2c2!important;opacity:.6;font-weight:normal}
+input::-webkit-input-placeholder{color:#c2c2c2!important;opacity:.6;font-weight:normal}
+/*弹性盒子*/
+.flex{display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;align-items:center;-webkit-align-items:center}
+.f_between{justify-content:space-between}
+.f_around{justify-content:space-around}
+.f_end{justify-content:flex-end}
+.f_center{justify-content:center}
+.f_warp{-webkit-flex-wrap:wrap;-webkit-box-lines:multiple;-moz-flex-wrap:wrap;flex-wrap:wrap}
+.f_relative{position:relative}
+.flex_tel{box-flex:1;-webkit-box-flex:1;-moz-box-flex:1;flex:1;-webkit-flex:1}
+/*浮动*/
+.fbox {overflow: hidden;}
+.fl {display: inline-block;float: left;}
+.fr {display: inline-block;float: right;}
+/*图片框*/
+.img_box {position: relative;text-align: center;}
+.img {display: inline;vertical-align: middle;max-height: 100%;max-width: 100%;}
+.cricle_img {display: inline-block;border-radius: 100%;}
+/*文本居中*/
+.t_center {text-align: center;}
+/*文本溢出隐藏*/
+.t_o{white-space:nowrap;text-overflow:ellipsis;overflow:hidden}
+.t_o_lin{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden}
+.t_o_lin_ot{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+/*文字颜色*/
+.t_white{color:#FFFFFF}
+.t_red{color:#BE121E}
+.t_gray{color:#999999}
+.t_bule{color:#10aeff}
+.t_green{color:#04be02}
+/*一般按钮样式*/
+.btn_red{background-color: #BE121E !important;color: #fff;}
+.btn_red{background-color: #BE121E;color: #fff;}
